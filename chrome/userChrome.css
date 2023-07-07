@@ -1,0 +1,1133 @@
+
+
+/* Анимация закрытия вкладок */
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/tab_closing_animation.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* This style simply makes the tab stay visible while it is being closed as well as makes the transition a bit slower */
+
+.tabbrowser-tab:not([pinned],[fadein]){
+  transition-duration: 120ms, 120ms !important;
+  transition-timing-function: ease-out, ease-out !important;
+  visibility: visible !important;
+}
+.tab-content:not([fadein],[pinned])
+.tab-icon-pending:not([fadein]),
+.tab-icon-image:not([fadein]),
+.tab-label:not([fadein]){
+  visibility: visible !important;
+}
+.tab-label:not([fadein]){
+  display: flex !important;
+}
+
+/* Убирает надпись "В этот раз искать с" из URLBar'а */
+
+.search-panel-one-offs-header.search-panel-header { display:none !important }
+#searchbar-anon-search-settings { display:none !important}
+
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:http://localhost:9005/app.html"] > .toolbarbutton-icon {
+
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/social.png);
+  background-size: cover !important;
+
+}
+
+
+.bookmark-item {
+
+  font-weight: 600;
+}
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:https://proxy6.net/en/myip"] > .toolbarbutton-icon {
+
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/ip.png);
+  background-size: cover !important;
+
+}
+
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:https://whoer.net/"] > .toolbarbutton-icon {
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/fingerprint.png);
+  background-size: cover !important;
+}
+
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:https://coveryourtracks.eff.org/"] > .toolbarbutton-icon {
+
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/shield.png);
+  background-size: cover !important;
+
+}
+
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:https://dnsleaktest.com/"] > .toolbarbutton-icon {
+
+  filter: invert(100%);
+
+}
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:https://browserleaks.com/"] > .toolbarbutton-icon {
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/fingerprint.png);
+  background-size: cover !important;
+}
+
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:http://127.0.0.1:7657/configtunnels"] > .toolbarbutton-icon {
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/i2p.png);
+  background-size: cover !important;
+}
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:about:webrtc"] > .toolbarbutton-icon {
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/webrtc.png);
+  background-size: cover !important;
+}
+
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:about:networking#dns"] > .toolbarbutton-icon {
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/dns.png);
+  background-size: cover !important;
+}
+
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:about:performance"] > .toolbarbutton-icon {
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/taskmanager.png);
+  background-size: cover !important;
+}
+
+
+
+/* Change github icon in bookmarks bar to white color one */
+.bookmark-item[image="page-icon:about:networking"] > .toolbarbutton-icon {
+	width: 0px !important;
+	height: 0px !important;
+	padding: 0 0 16px 16px !important;
+  background-image: url(image/networking.png);
+  background-size: cover !important;
+}
+
+
+
+
+
+
+/*list-style-image: url(image/hunter.png);*/
+
+#urlbar {
+
+  font-weight: 600;
+
+}
+
+#firefox_hunter_io-BAP {
+  
+  list-style-image: url(image/hunter.png) !important;
+
+}
+
+
+toolbarbutton#_50f5675e-2d43-4894-a3b6-ad933f6a31a0_-BAP .toolbarbutton-icon {
+
+  list-style-image: url(image/sghire.png);
+
+}
+
+/* Change XIRF icon */
+#_5e71bed2-2b15-40b8-a15b-ba89563aaf73_-BAP {
+  
+  list-style-image: url(image/xirf.png) !important; 
+
+}
+
+/* TamperMonkey */
+#firefox_tampermonkey_net-BAP {
+
+  list-style-image: url(image/monkey.png) !important; 
+
+}
+
+/* Change Mullvad icon */
+#_d19a89b9-76c1-4a61-bcd4-49e8de916403_-BAP {
+  
+  list-style-image: url(image/mullvad.png) !important; 
+
+}
+
+
+#home-button {
+  list-style-image: url(image/home.png) !important; 
+}
+
+/* Change ublock icon */
+#ublock0_raymondhill_net-BAP {
+  
+  list-style-image: url(image/ublock.png) !important; 
+
+}
+
+/* switchyomega@feliscatus.addons.mozilla.org */
+
+#switchyomega_feliscatus_addons_mozilla_org-BAP {
+
+  list-style-image: url(image/proxy.png) !important; 
+
+}
+
+
+/* Change KeePassXC icon */
+#_74145f27-f039-47ce-a470-a662b129930a_-BAP {
+  
+  list-style-image: url(image/clear.png) !important; 
+
+}
+
+
+
+/* Change KeePassXC icon */
+#keepassxc-browser_keepassxc_org-BAP {
+  
+  list-style-image: url(image/keepass.png) !important; 
+
+}
+
+
+/* Change CanvasBlocker icon */
+#canvasblocker_kkapsner_de-BAP {
+  
+  list-style-image: url(image/fingerprint.png) !important; 
+
+}
+
+#star-button{
+  list-style-image: url(image/bookmark.png) !important;
+  
+}
+
+
+/* make LocalCDN extension toolbar icon white */
+toolbarbutton#_b86e4813-687a-43e6-ab65-0bde4ab75758_-BAP .toolbarbutton-icon
+{
+  filter: brightness(0) saturate(100%) invert(100%) !important;
+}
+
+/* make Gotanda extension toolbar icon white */
+toolbarbutton#_20e905ef-ec64-490e-9cff-d7d26d89b6db_-BAP .toolbarbutton-icon
+{
+  list-style-image: url(image/souji.png);
+}
+
+toolbarbutton#_2eed132b-4e79-4ab9-84f3-54b5c9f72eb0_-BAP .toolbarbutton-icon {
+
+  list-style-image: url(image/seo.png);
+
+}
+
+
+#contaner-proxy_bekh-ivanov_me-BAP{
+
+list-style-image: url(image/proxy.png) !important;
+
+}
+
+#jid0-jjrrrbmgoshuhb07ivnxtbal29w_jetpack-BAP {
+
+  list-style-image: url(image/ipsearch.png) !important;
+  
+}
+
+toolbarbutton#_531906d3-e22f-4a6c-a102-8057b88a1a63_-BAP .toolbarbutton-icon {
+
+  list-style-image: url(image/singlefile.png) !important;
+
+
+}
+
+#linkgopher_oooninja_com-BAP {
+
+  list-style-image: url(image/url.png) !important;
+
+
+}
+
+/* Shodan */
+#firefox-extension_shodan_io-BAP {
+
+  list-style-image: url(image/shodan.png) !important;
+
+}
+
+
+#jid1-awt6ex5apvwttg_jetpack-BAP {
+
+  list-style-image: url(image/shodan.png) !important;
+
+}
+
+
+
+
+/* make Chameleon extension toolbar icon white */
+toolbarbutton#_3579f63b-d8ee-424f-bbb6-6d0ce3285e6a_-BAP .toolbarbutton-icon
+{
+  
+  list-style-image: url(image/chameleon.png);
+  
+}
+
+/* make Linguist extension toolbar icon white */
+toolbarbutton#_e5b6e4ac-ec96-44f5-b257-e4d3c8291b41_-BAP .toolbarbutton-icon
+{
+  filter: brightness(0) saturate(100%) invert(100%) !important;
+}
+
+/* make Search By Image extension toolbar icon white */
+toolbarbutton#_2e5ff8c8-32fe-46d0-9fc8-6b8986621f3c_-BAP .toolbarbutton-icon
+{
+  filter: brightness(0) saturate(100%) invert(100%) !important;
+}
+
+
+toolbarbutton#_d07ccf11-c0cd-4938-a265-2a4d6ad01189_-BAP .toolbarbutton-icon
+{
+  filter: brightness(0) saturate(100%) invert(100%) !important;
+}
+
+
+toolbarbutton#_0c8fbd76-bdeb-4c52-9b24-d587ce7b9dc3_-BAP .toolbarbutton-icon
+{
+  filter: brightness(0) saturate(100%) invert(100%) !important;
+}
+
+
+toolbarbutton#_7556ab4a-1de3-4f4b-994f-f09e0fa4b262_-BAP .toolbarbutton-icon
+{
+  list-style-image: url(image/nymelia.png);
+}
+
+
+toolbarbutton#_0cc7cf7e-a5f5-4d46-800a-e9db954118b6_-BAP .toolbarbutton-icon
+{
+  list-style-image: url(image/emailspy.png);
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/* СТАТУС СТРАНИЦЫ В URL */
+
+
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/status_inside_urlbar_v2.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* STATUSPANEL INSIDE URLBAR */
+
+/* This _v2 variant "replaces" the whole contents of the urlbar, including all icons,
+   with statuspanel text when needed. The "normal" variant replaces only the url part. */
+
+/**************
+IMPORTANT WARNING
+Using this style can lead to long tab switch times (and probably other problems). Everything may be fine when Firefox starts but situation gets gradually worse, although pretty slowly.
+Relevant information: https://bugzilla.mozilla.org/show_bug.cgi?id=1496065
+As a workaround, the -moz-element background image is removed somewhat often which seems work at first glance. But there might still be some related issues on really long sessions. Just be aware.
+**************/
+
+#urlbar::before{
+  z-index: 1;
+  content: "";
+  display: block;
+  position: absolute;
+  pointer-events:none;
+  padding-left: 5px;
+  margin-inline-end: 5px;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+  background-image: -moz-element(#statuspanel);
+  background-position: left 6px;
+  inset: 1px;
+  border-radius: 15% 15% 15% 15%;
+}
+
+/* Using -moz-element() causes some problems after Firefox has been running several hours such as long tab switch times. For this reason the background image is removed on hover and focused states which appears to clear the state. */
+
+/* Hide the status ovelay when urlbar is hovered */
+#urlbar:hover::before,
+#urlbar[focused]::before{
+  visibility: hidden;
+  /* Remove the image to get rid of -moz-element() related problems */
+  background-image: none !important;
+
+
+}
+
+:root[uidensity="compact"] #urlbar::before{ background-position-y: 0px }
+:root[uidensity="touch"] #urlbar::before{ background-position-y: 3px }
+
+#statuspanel-label{
+  height:3em;
+  min-width: 1000px;
+  background-color: var(--toolbar-field-background-color) !important;
+  border: none !important;
+  font-size: 1.1em;
+  color:white !important;
+  margin-inline: 0px !important;
+  margin-bottom: 0px;
+  padding-top: 0px !important;
+
+  
+}
+
+/* If you use a theme where urlbar is partially transparent you should edit this color to something that closely matches the perceived color of urlbar. Or perhaps use background-image - linear-gradient() can work well here. But keep the color or image opaque or otherwise you'll face an issue where urlbar text bleeds through */
+#statuspanel{ background-color: var(--toolbar-bgcolor) }
+
+#statuspanel{
+  color: var(--toolbar-field-color, black);
+  z-index: -1;
+  max-width: 100% !important;
+  padding-top: 0 !important;
+  font-weight: 600;
+}
+#statuspanel[type="status"] { color: Highlight }
+
+/* This creates opaque layer to be shown in front of "hidden" real statuspanel */
+.browserStack{
+  background-color: var(--tabpanel-background-color);
+}
+
+/*  OPTIONAL FEATURES  */
+/* Uncomment to enable */
+
+/* Center the statuspanel text. This might be useful with centered urlbar text */
+/*
+#statuspanel-label{
+  text-align: center;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+.urlbar-input-box::after{ background-position-x: center !important; }
+*/
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* РАЗДЕЛИТЕЛИ У ВКЛАДОК */
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/tab_separator_lines.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* Bring back tab separator lines that were removed in Proton */
+
+/* 
+.tabbrowser-tab{
+  border-inline-start: 1px solid transparent !important;
+  border-image: 0 1 linear-gradient(
+    transparent 10%,
+    color-mix(in srgb, currentColor 20%, transparent) 20%,
+    color-mix(in srgb, currentColor 20%, transparent) 80%,
+    transparent 80%
+  ) !important;
+}
+
+.tabbrowser-tab:hover,
+#tabbrowser-tabs:not([movingtab]) .tabbrowser-tab:hover + .tabbrowser-tab:not([first-visible-unpinned-tab]),
+.tabbrowser-tab:first-child,
+.tabbrowser-tab[selected],
+.tabbrowser-tab[multiselected],
+#tabbrowser-arrowscrollbox[overflowing] > .tabbrowser-tab[first-visible-unpinned-tab],
+#tabbrowser-tabs:not([movingtab]) .tabbrowser-tab[multiselected] + .tabbrowser-tab,
+#tabbrowser-tabs:not([movingtab]) .tabbrowser-tab[selected] + .tabbrowser-tab { border-image: none !important; }
+*/
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* URLBAR ПОДСВЕТКА ПО ЦВЕТУ КОНТЕЙНЕРА */
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/urlbar_container_color_border.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* Draws a border around urlbar using the color of the current container. */
+
+#urlbar:not([open]) > #urlbar-input-container{
+  border-width: 0 !important;
+  padding: 2px !important;
+}
+
+#userContext-icons::before{
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  outline: 2px solid var(--identity-icon-color);
+  border-radius: var(--toolbarbutton-border-radius);
+  outline-offset: -2px;
+  pointer-events: none;
+  filter: drop-shadow(0px, 0px, 0px, 100px);
+}
+
+#urlbar[focused] #userContext-icons::before{
+  outline-width: 2px;
+  outline-offset: -2px
+}
+
+/* These might potentially cause some issues, but are needed to make the border extend the border to the full popup when urlabar popup is open */
+#urlbar[open] > #urlbar-input-container{ position: static !important; }
+#urlbar[open] > #urlbar-background{ z-index: -1 !important; }
+
+/* OPTIONAL FEATURES */
+
+/* Hide container label in urlbar */
+/* #userContext-label{ display: none } */
+
+/* Hide container icon in urlbar */
+/* #userContext-indicator{ display: none } */
+
+/* Hide the container line above tabs */
+/* .tab-context-line{ display: none } */
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* Компактные расширения */
+
+:root,
+#TabsToolbar{ 
+  
+  --toolbarbutton-outer-padding: 5px !important; 
+  --toolbarbutton-inner-padding: 7px !important; 
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/* Панель расширений плавная анимация */
+
+/*  Clean and tight extensions menu */
+
+#unified-extensions-view{
+  
+  --uei-icon-size: 23px; /*  Change icon size */
+}
+
+#unified-extensions-view .panel-header,
+#unified-extensions-view .panel-header + toolbarseparator,
+#unified-extensions-view .panel-subview-body + toolbarseparator,
+#unified-extensions-view #unified-extensions-manage-extensions {
+  display:none !important;
+}
+
+#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton{
+  visibility: hidden !important;
+  transition: 300ms !important;
+  -moz-margin-end: -4.4em !important;
+}
+
+#unified-extensions-view .panel-subview-body {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+#unified-extensions-view:hover 
+.unified-extensions-item-menu-button.subviewbutton{ 
+  visibility: visible !important;
+  transition: 300ms !important;
+  -moz-margin-end: initial !important;
+}
+
+#unified-extensions-view .unified-extensions-item .unified-extensions-item-icon,
+#unified-extensions-view .unified-extensions-item .toolbarbutton-badge-stack {
+   margin-inline-end: 11px !important;
+}
+
+#unified-extensions-view .unified-extensions-item-name, 
+#unified-extensions-view .unified-extensions-item-message {
+  padding-inline-start: 0.5em !important;
+  width: 27em !important;
+}
+
+#unified-extensions-view .unified-extensions-item-action-button.subviewbutton {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* Размер вкладки */
+.tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"])
+{
+	max-width: 200px !important;
+  min-width: 100px !important;
+  
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ЖИРНЫЙ ТЕКСТ */
+
+.tabbrowser-tab {
+
+  font-weight: bold;
+
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+.tabbrowser-tab .tab-icon-image {
+	height: 18px !important;
+	width: 18px !important;
+}
+
+.tabbrowser-tab > .tab-stack > .tab-background > .tab-context-line
+{
+	background-color: var(--identity-icon-color) !important;
+	height: 2px !important;
+	border-radius: 1px !important;
+	box-shadow: 0px 0px 18px 2px var(--identity-icon-color) !important;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*#reload-button {
+  list-style-image: url(image/reload.svg) !important;
+}
+*/
+
+#forward-button {
+  list-style-image: url(image/right-arrow.svg) !important;
+}
+
+#back-button {
+  list-style-image: url(image/left-arrow.svg) !important;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* Source: https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/iconized_main_menu.css
+
+/* Adds icons to main menu items which were removed in Proton */
+#appMenu-fxa-status2[fxastatus] > toolbarbutton::before,
+#appMenu-protonMainView > .panel-subview-body > toolbarbutton > image{
+  fill: currentColor;
+  -moz-context-properties: fill;
+  margin-inline: 0 8px !important;
+}
+#appMenu-new-tab-button2{ list-style-image: url("chrome://browser/skin/new-tab.svg") }
+#appMenu-new-window-button2{ list-style-image: url("chrome://browser/skin/window.svg") }
+#appMenu-new-private-window-button2{ list-style-image: url("chrome://browser/skin/privateBrowsing.svg") }
+#appMenu-bookmarks-button{ list-style-image: url("chrome://browser/skin/bookmark-star-on-tray.svg") }
+#appMenu-history-button{ list-style-image: url("chrome://browser/skin/history.svg") }
+#appMenu-downloads-button{ list-style-image: url("chrome://browser/skin/downloads/downloads.svg") }
+#appMenu-passwords-button{ list-style-image: url("chrome://browser/skin/login.svg") }
+#appMenu-extensions-themes-button{ list-style-image: url("chrome://mozapps/skin/extensions/extension.svg") }
+#appMenu-print-button2{ list-style-image: url("chrome://global/skin/icons/print.svg") }
+#appMenu-save-file-button2{ list-style-image: url("chrome://browser/skin/save.svg") }
+#appMenu-find-button2{ list-style-image: url("chrome://global/skin/icons/search-glass.svg") }
+#appMenu-settings-button{ list-style-image: url("chrome://global/skin/icons/settings.svg") }
+#appMenu-more-button2{ list-style-image: url("chrome://global/skin/icons/developer.svg") }
+#appMenu-help-button2{ list-style-image: url("chrome://global/skin/icons/info.svg") }
+#appMenu-quit-button2{ list-style-image: url("chrome://devtools/skin/images/search-clear.svg") }
+/* Use account-button icon for signed in sync item */
+#appMenu-fxa-status2[fxastatus] > toolbarbutton::before{
+  display: -moz-box;
+  content: "";
+  width: 0px;
+  height: 16px;
+  background-image: var(--avatar-image-url)
+}
+/* Add somewhat hacky separator to zoom controls so it looks consistent */
+#appMenu-protonMainView > .panel-subview-body::after{
+  content: "";
+  display: -moz-box;
+  border-bottom: 1px solid var(--panel-separator-color);
+  margin: var(--panel-separator-margin);
+}
+
+#appMenu-find-button2 ~ *{
+  -moz-box-ordinal-group: 2;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/custom_default_tab_favicons.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* Icon files not included. Save the icon files to same folder where userChrome.css is */
+
+ /* Default tab favicon, the globe kind of thing */
+ .tab-icon-image:not([src]){
+  content: url("icon.png"); /* filename for icon to load */
+}
+
+/* The Firefox brand icon seen on newtab page etc. */
+.tab-icon-image[src="chrome://branding/content/icon32.png"]{
+  content: url("icon.png"); /* filename for icon to load */
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/context_menus_more_proton.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* Adds more proton-like styling to context menus. Rounded rows, and more consistent padding. This is only going to work on Win10+ */
+
+:root{
+  --arrowpanel-menuitem-margin: 0 8px;
+  --arrowpanel-menuitem-padding-block: 8px;
+  --arrowpanel-menuitem-padding-inline: 8px;
+  --arrowpanel-menuitem-border-radius: 4px;
+  --panel-separator-margin-vertical: 4px;
+  --button-hover-bgcolor: rgb(120, 120, 120);
+}
+:root[uidensity="compact"] menupopup:not(.in-menulist){
+  --panel-padding: 4px 0 !important;
+  --arrowpanel-menuitem-padding-block: 8px;
+}
+
+menupopup{
+  --panel-item-hover-bgcolor: var(--button-hover-bgcolor);
+  --panel-border-radius: var(--arrowpanel-border-radius) !important;
+}
+menupopup > menuitem,
+menupopup > menu{
+  appearance: none !important;
+  margin: var(--arrowpanel-menuitem-margin) !important;
+  min-height: 24px !important;
+  padding: var(--arrowpanel-menuitem-padding-block) var(--arrowpanel-menuitem-padding-inline) !important;
+  border-radius: var(--arrowpanel-menuitem-border-radius) !important;
+  background-color: transparent !important;
+}
+#context-navigation{
+  padding-inline: var(--arrowpanel-menuitem-padding-inline) !important;
+}
+.menu-right{
+  margin-inline-end: initial !important;
+}
+menupopup:not(.in-menulist){
+  --panel-padding: var(--arrowpanel-menuitem-padding-block) 0 !important;
+}
+
+:root[uidensity="compact"] #context-navigation{
+  padding-block: 0 !important;
+}
+menuseparator:not(.in-menulist){
+  margin-block: var(--panel-separator-margin-vertical) !important;
+}
+
+#context-navigation > menuitem[_moz-menuactive] .menu-iconic-icon{
+  border-radius: var(--arrowpanel-menuitem-border-radius) !important;
+}
+#context-navigation > menuitem[_moz-menuactive]:not([disabled]) .menu-iconic-icon,
+menupopup > menuitem[_moz-menuactive],
+menupopup > menu[_moz-menuactive]{
+  background-color: var(--panel-item-hover-bgcolor) !important;
+  color: var(--panel-color,inherit) !important;
+}
+menupopup > menuitem[disabled][_moz-menuactive],
+menupopup > menu[disabled][_moz-menuactive]{
+  background-color: var(--menuitem-disabled-hover-background-color) !important;
+}
+
+
+
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar .tabbrowser-tab .tab-stack,
+#TabsToolbar .tabbrowser-tab .tab-background,
+#TabsToolbar .tabbrowser-tab .tab-content,
+#TabsToolbar .tabbrowser-tab::after,
+#TabsToolbar .tabbrowser-tab::before,
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ #TabsToolbar > #tabbrowser-tabs > .tabbrowser-tab::after,
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ #TabsToolbar > #tabbrowser-tabs > .tabbrowser-tab::before,
+#TabsToolbar .tabbrowser-tab:hover::before,
+#TabsToolbar .tabbrowser-tab[last-visible-tab]:hover::after,
+#TabsToolbar #tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before {
+  border-radius: 17px !important;
+}
+
+#context-sep-navigation,
+#context-navigation {
+display: none !important;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/button_effect_scale_onclick.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* Effect */
+.urlbar-icon,
+.toolbarbutton-icon,
+.menuitem-iconic .menu-iconic-icon{
+  transition: transform 83ms linear !important;
+}
+
+toolbar .toolbarbutton-1 > .toolbarbutton-icon{
+  transition: padding 83ms linear !important;
+}
+
+toolbarbutton#scrollbutton-up:active > .toolbarbutton-icon,
+toolbarbutton:not(.toolbarbutton-1):active > .toolbarbutton-icon,
+toolbar .toolbarbutton-1:not([disabled]):active > .toolbarbutton-badge-stack > .toolbarbutton-icon,
+.menuitem-iconic:active .menu-iconic-icon,
+.urlbar-page-action:active > .urlbar-icon{
+  transform: scale(0.6) !important;
+}
+toolbarbutton#scrollbutton-down:active > .toolbarbutton-icon{ transform: scale(-0.6) !important; }
+
+toolbar .toolbarbutton-1:not([disabled]):active > .toolbarbutton-icon{
+  padding: calc(var(--toolbarbutton-inner-padding) + 3px) !important;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/round_ui_items.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* Make bunch of things in the main UI round */
+
+:root{ --toolbarbutton-border-radius: 14px !important }
+#urlbar-input-container > box:hover,
+#urlbar-input-container > box[open],
+#main-menubar >  menu,
+.titlebar-button:hover,
+#scrollbutton-up,
+#scrollbutton-down,
+.tab-close-button,
+.close-icon > image,
+#page-action-buttons > :hover,
+.panel-arrowcontent,
+.urlbarView-row-inner,
+.search-one-offs button,
+.subviewbutton-back,
+.toolbaritem-combined-buttons > toolbarbutton,
+#PopupSearchAutoComplete,
+menupopup{ border-radius: 0px }
+
+button,
+.tab-background{ border-radius: 30px !important; }
+
+.panel-arrowcontent{ margin-inline-end: 0 !important; }
+.panel-arrow{ margin-inline: 17px !important; }
+
+menupopup{ --moz-appearance: none !important; overflow: -moz-hidden-unscrollable !important; }
+
+.tabbrowser-tab[selected]::after,
+.tabbrowser-tab[beforeselected-visible]::after{ border-color: transparent !important; }
+
+#nav-bar{ box-shadow: none !important; margin-top: 3px }
+.tab-line{ display: none }
+
+.tab-background[selected]{
+  border-top-width: 2px !important;
+  border-top-color: var(--lwt-tab-line-color) !important;
+}
+.tabbrowser-tab[selected]{ z-index: auto !important; }
+
+
+toolbar toolbarbutton:not(#back-button):not(.bookmark-item):not(.titlebar-button) > .toolbarbutton-icon{  border-radius: 0px !important; clip-path: circle() }
+
+menugroup:hover > menuitem{ clip-path: circle() }
+
+
+
+
+menupopup {
+  --panel-color: rgb(230, 230, 230) !important;
+  --panel-background: rgb(17, 17, 17) !important;
+
+
+}
+
+menu:not([disabled="true"])[_moz-menuactive="true"], menuitem:not([disabled="true"])[_moz-menuactive="true"] {
+  background-color: #000000 !important;
+  color: rgb(255, 255, 255) !important;
+  /*box-shadow: 0px 1px 5px grey;*/
+  filter: invert(100%) saturate(0%) contrast(100%) brightness(100%);
+  border-radius: 5px;
+}
+
+/*
+menu:not {
+  border-radius: 15px;
+}
+*/
+
+menupopup:not(.in-menulist) > menuitem,
+menupopup:not(.in-menulist) > menu {
+padding-block: 4px !important;
+min-height: unset !important; /* v92.0 - for padding below 4px */
+
+}
+:root {
+--arrowpanel-menuitem-padding: 4px 8px !important;
+}
+
+
+
+@import "special/windows_11_10.css";
+@import "special/windows_8_7.css";
+@import "special/linux.css";
+@import "special/mac.css";
+
+@media (-moz-platform: windows),
+     (-moz-platform: linux),
+     (-moz-platform: macos)
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* ЦВЕТ ИКОНКИ ЗАГРУЗКИ */
+
+{
+
+
+    #downloads-indicator-progress-inner{
+      --toolbarbutton-icon-fill-attention: rgb(255, 255, 255);
+    }
+
+  }

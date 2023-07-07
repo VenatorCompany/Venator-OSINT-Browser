@@ -1,0 +1,25 @@
+@-moz-document url("about:newtab"), url("about:home"){
+  .search-handoff-button{ display: none !important; }
+}
+
+
+@-moz-document url("about:home"), url("about:newtab") {
+
+  /** Import Lepton stylesheet (Content) ****************************************/
+@import url("css/leptonContent.css");
+
+/** Add your custom styles below **********************************************/
+
+  body {
+
+    background-image: url("img/img1.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    
+  }
+}
+
+
+
